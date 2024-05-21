@@ -64,7 +64,7 @@ const Header = () => {
           <Link href="/" aria-label="Go to the homepage">
             <span className="text-gray-700 hover:text-gray-900">HOME</span>
           </Link>
-       
+
           <div className="border-l mx-2 h-4"></div>
           <Link href="/servicos" aria-label="Go to the products page">
             <span className="text-gray-700 hover:text-gray-900">SERVIÇOS</span>
@@ -83,32 +83,28 @@ const Header = () => {
           <div className="lg:hidden flex flex-col items-center mt-2 pt-4">
             <div className="flex space-x-6 mb-5">
               <Link href="/favorites" aria-label="Go to the favorites page">
-                <MdFavorite className="text-red-500 text-2xl cursor-pointer" />
+                <FaInstagram className="text-gray-700 text-2xl cursor-pointer" />
               </Link>
-              <MdAccountCircle className="text-gray-700 text-2xl cursor-pointer" />
-              <MdShoppingCart className="text-gray-700 text-2xl cursor-pointer" />
+              <FaFacebook className="text-gray-700 text-2xl cursor-pointer" />
+              <FaLinkedin className="text-gray-700 text-2xl cursor-pointer" />
             </div>
 
             <Link href="/" aria-label="Go to the homepage">
-              <span className="text-gray-700 hover:text-gray-900">Início</span>
+              <span className="text-gray-700 hover:text-gray-900">HOME</span>
             </Link>
             <div className="border-l mx-2 h-4"></div>
-            <Link href="/products" aria-label="Go to the products page">
+            <Link href="/servicos" aria-label="Go to the products page">
               <span className="text-gray-700 hover:text-gray-900">
-                Lançamentos
+                SERVIÇOS
               </span>
             </Link>
             <div className="border-l mx-2 h-4"></div>
-            <Link href="/products" aria-label="Go to the products page">
-              <span className="text-gray-700 hover:text-gray-900">
-                Coleções
-              </span>
+            <Link href="/obras" aria-label="Go to the products page">
+              <span className="text-gray-700 hover:text-gray-900">OBRAS</span>
             </Link>
             <div className="border-l mx-2 h-4"></div>
-            <Link href="/products" aria-label="Go to the products page">
-              <span className="text-gray-700 hover:text-gray-900">
-                Papelaria
-              </span>
+            <Link href="/contato" aria-label="Go to the products page">
+              <span className="text-gray-700 hover:text-gray-900">CONTATO</span>
             </Link>
           </div>
         )}
