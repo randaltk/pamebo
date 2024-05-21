@@ -17,6 +17,7 @@ const config: Config = {
         "pink-custom": "#FF719B",
         "green-custom": "#DCFF97",
         "background-custom": "#FEFEFE",
+        "red-custom": "#E42926",
         "blue-custom": "#262953",
       },
       borderColor: {
