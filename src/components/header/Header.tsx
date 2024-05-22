@@ -21,11 +21,12 @@ const Header = () => {
               <Image
                 src="/logopamebo.jpeg"
                 alt="Logo"
-                width={220}
-                height={220}
-                objectFit="contain"
-                objectPosition="center"
+                width={"200"}
+                height={"200"}
+                objectFit="cover"
+                objectPosition="bottom"
                 loading="lazy"
+            
               />
             </Link>
           </div>
@@ -35,10 +36,9 @@ const Header = () => {
               <FaBars className="text-gray-500" />
             </button>
           </div>
-    
 
           <div className="hidden lg:flex items-center space-x-9 ml-4">
-            <Link href="/favorites" aria-label="Go to the favorites page">
+            <Link href="/" aria-label="Go to the favorites page">
               <FaInstagram className="text-gray-700 text-2xl cursor-pointer" />
             </Link>
             <FaFacebook className="text-gray-700 text-2xl cursor-pointer" />
@@ -46,7 +46,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="hidden lg:flex justify-center border-t mt-2 pt-4">
+        <div className="hidden lg:flex justify-center border-t   mt-3 pt-4">
           <Link href="/" aria-label="Go to the homepage">
             <span className="text-gray-700 hover:text-gray-900">HOME</span>
           </Link>
