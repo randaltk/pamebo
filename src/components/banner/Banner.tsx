@@ -14,7 +14,7 @@ const Banner = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
-    appendDots: (dots:any) => (
+    appendDots: (dots: any) => (
       <div
         style={{
           position: "absolute",
@@ -35,7 +35,7 @@ const Banner = () => {
       <Slider {...settings}>
         <div className="relative overflow-hidden h-screen w-screen">
           <Image
-            src="/logopamebo.jpeg"
+            src="/banner01.jpeg"
             alt="Logo"
             layout="fill"
             objectFit="cover"
@@ -43,14 +43,14 @@ const Banner = () => {
             loading="lazy"
             className="w-full h-full"
           />
-          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="absolute inset-0 "></div>
           <div className="absolute inset-0 flex items-center justify-center text-white text-center">
             {/* Conteúdo do slide */}
           </div>
         </div>
         <div className="relative overflow-hidden h-screen w-screen">
           <Image
-            src="https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="/banner02.jpeg"
             alt="Logo"
             layout="fill"
             objectFit="cover"
@@ -58,14 +58,14 @@ const Banner = () => {
             loading="lazy"
             className="w-full h-full"
           />
-          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="absolute inset-0 "></div>
           <div className="absolute inset-0 flex items-center justify-center text-white text-center">
             {/* Conteúdo do slide */}
           </div>
         </div>
         <div className="relative overflow-hidden h-screen w-screen">
           <Image
-            src="https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="/banner03.jpeg"
             alt="Logo"
             layout="fill"
             objectFit="cover"
@@ -73,14 +73,12 @@ const Banner = () => {
             loading="lazy"
             className="w-full h-full"
           />
-          <div className="absolute inset-0 bg-black opacity-40"></div>
+          <div className="absolute inset-0 "></div>
           <div className="absolute inset-0 flex items-center justify-center text-white text-center">
             {/* Conteúdo do slide */}
           </div>
         </div>
       </Slider>
-
-
     </div>
   );
 };
