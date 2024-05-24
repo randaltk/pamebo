@@ -1,68 +1,42 @@
 import Banner from "@/components/banner/Banner";
 import InfoBar from "@/components/infobar/Infobar";
-
+import ServicesSection from "@/components/servicesSection/ServicesSection";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <Banner />
-      <InfoBar/>
-      <div className="py-12 flex justify-center items-center">
-        <div className="flex max-w-xl bg-white shadow-lg rounded-lg overflow-hidden">
-          <div
-            className="w-1/2 bg-cover"
-            style={{
-              backgroundImage:
-                "url('https://plus.unsplash.com/premium_photo-1682617326551-4749611516f6?q=80&w=2666&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-            }}
-          ></div>
-          <div className="w-1/2 p-4">
-            <h1 className="text-gray-900 font-bold text-3xl">
-              Manutenção e Lavagem Predial
-            </h1>
-            <p className="mt-2 text-gray-600 text-lg">
-              Benefícios e impactos para qualquer prédio
-            </p>
+      <InfoBar />
+      <div className="bg-white p-6 md:p-8 flex flex-col justify-center items-center mb-0 md:mb-0">
+  <div className="mb-6 text-center text-base md:text-lg">
+    Veja alguns cases de grandes obras realizadas.
+  </div>
+  <Link href="/obras" legacyBehavior>
+    <button className="bg-blue-custom text-white py-2 px-4 rounded hover:bg-blue-700">
+      Cases
+    </button>
+  </Link>
+</div>
 
-            <div className="flex items-center justify-between mt-4">
-              <a
-                href="#"
-                className="px-4 py-2 bg-blue-custom text-white text-sm font-bold uppercase rounded hover:bg-blue-700"
-              >
-                Leia mais
-              </a>
-            </div>
-          </div>
+      <section className="bg-blue-custom py-6 md:py-8 flex flex-col justify-center items-center relative">
+        <div className="max-w-lg text-center relative p-4 md:p-6">
+          <h4 className="text-xl md:text-2xl font-bold text-white mb-4">
+            MAIS DE 32 ANOS NO MERCADO
+          </h4>
+          <p className="text-base md:text-lg text-white italic">
+            Conquistar a todo momento a confiança do mercado oferecendo serviço
+            de excelência é uma tarefa árdua que buscamos diariamente com
+            engajamento, comprometimento e postura ética profissional de todos
+            os colaboradores que compõe a Repinte.
+          </p>
+          <p className="text-base md:text-lg text-white italic mt-4">
+            Eng. Paulo Ramalho
+          </p>
         </div>
-       
-        <div className="flex max-w-xl bg-white shadow-lg rounded-lg overflow-hidden ml-4">
-          <div
-            className="w-1/2 bg-cover"
-            style={{
-              backgroundImage:
-                "url('https://plus.unsplash.com/premium_photo-1682617326551-4749611516f6?q=80&w=2666&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-            }}
-          ></div>
-          <div className="w-1/2 p-4">
-            <h1 className="text-gray-900 font-bold text-3xl">
-            Valorizando seu Imóvel com a Restauração
-            </h1>
-            <p className="mt-2 text-gray-600 text-lg">
-              Benefícios e impactos para qualquer prédio
-            </p>
+      </section>
 
-            <div className="flex items-center justify-between mt-4">
-              <a
-                href="#"
-                className="px-4 py-2 bg-blue-custom text-white text-sm font-bold uppercase rounded hover:bg-blue-700"
-              >
-                Leia mais
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+      <ServicesSection />
     </>
   );
 }

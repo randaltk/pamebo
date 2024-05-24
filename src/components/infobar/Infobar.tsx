@@ -2,7 +2,7 @@ const InfoBar = () => {
   return (
     <>
       <div
-        className="bg-cover bg-center relative h-screen md:h-96 w-full flex justify-center items-center" // Altura total da tela no mobile, menor no desktop
+        className="bg-cover bg-center relative md:h-96 w-full flex justify-center items-center" // Altura total da tela no mobile, menor no desktop
         style={{
           backgroundImage:
             'url("https://repinte.com.br/wp-content/uploads/2019/11/background-stats.jpg")',
@@ -58,33 +58,6 @@ const InfoBar = () => {
           </div>
         </div>
       </div>
-
-      <div className="bg-background-custom p-4 md:py-6 flex flex-col justify-center items-center mb-6 md:mb-8 mt-6 md:mt-8">
-        <div className="mb-4 md:mb-6 text-center text-base md:text-lg">
-          Veja alguns cases de grandes obras realizadas.
-        </div>
-
-        <button className="bg-blue-custom text-white py-2 px-4 rounded hover:bg-blue-700">
-          Cases
-        </button>
-      </div>
-
-      <section className="bg-blue-custom p-4 md:p-6 flex flex-col justify-center items-center relative mb-6 md:mb-8 mt-6 md:mt-8">
-        <div className="max-w-lg text-center relative">
-          <h4 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            MAIS DE 32 ANOS NO MERCADO
-          </h4>
-          <p className="text-base md:text-lg text-white italic">
-            Conquistar a todo momento a confiança do mercado oferecendo serviço
-            de excelência é uma tarefa árdua que buscamos diariamente com
-            engajamento, comprometimento e postura ética profissional de todos
-            os colaboradores que compõe a Repinte.
-          </p>
-          <p className="text-base md:text-lg text-white italic absolute right-0 ml-4 mb-4">
-            Eng. Paulo Ramalho
-          </p>
-        </div>
-      </section>
     </>
   );
 };

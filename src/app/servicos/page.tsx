@@ -8,7 +8,7 @@ const Servicos = () => {
 
   const services = [
     {
-      name: "Pinturas Externas e Internas",
+      name: "Pintura de paredes e teto em geral",
       image:
         "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       description:
@@ -22,14 +22,14 @@ const Servicos = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
-      name: "Pastilhas",
+      name: "Restauração de superfícies",
       image:
         "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
-      name: "Tratamento de Trincas",
+      name: "Lavagem e limpeza de fachada",
       image:
         "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       description:

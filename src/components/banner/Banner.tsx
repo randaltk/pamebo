@@ -33,47 +33,50 @@ const Banner = () => {
   return (
     <div className="w-full overflow-hidden relative">
       <Slider {...settings}>
-        <div className="relative overflow-hidden h-screen w-screen">
-          <Image
-            src="/banner01.jpeg"
-            alt="Logo"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="bottom"
-            loading="lazy"
-            className="w-full h-full"
-          />
-          <div className="absolute inset-0 "></div>
+        <div className="relative overflow-hidden h-[40vh] sm:h-[60vh] md:h-[75vh] lg:h-screen">
+          <div className="relative h-full w-full">
+            <Image
+              src="/banner01.jpeg"
+              alt="Banner 1"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              loading="lazy"
+              className="w-full h-full"
+            />
+          </div>
           <div className="absolute inset-0 flex items-center justify-center text-white text-center">
             {/* Conteúdo do slide */}
           </div>
         </div>
-        <div className="relative overflow-hidden h-screen w-screen">
-          <Image
-            src="/banner02.jpeg"
-            alt="Logo"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="bottom"
-            loading="lazy"
-            className="w-full h-full"
-          />
-          <div className="absolute inset-0 "></div>
+        <div className="relative overflow-hidden h-[40vh] sm:h-[60vh] md:h-[75vh] lg:h-screen">
+          <div className="relative h-full w-full">
+            <Image
+              src="/banner02.jpeg"
+              alt="Banner 2"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              loading="lazy"
+              className="w-full h-full"
+            />
+          </div>
           <div className="absolute inset-0 flex items-center justify-center text-white text-center">
             {/* Conteúdo do slide */}
           </div>
         </div>
-        <div className="relative overflow-hidden h-screen w-screen">
-          <Image
-            src="/banner03.jpeg"
-            alt="Logo"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="bottom"
-            loading="lazy"
-            className="w-full h-full"
-          />
-          <div className="absolute inset-0 "></div>
+        <div className="relative overflow-hidden h-[40vh] sm:h-[60vh] md:h-[75vh] lg:h-screen">
+          <div className="relative h-full w-full">
+            <Image
+              src="/banner03.jpeg"
+              alt="Banner 3"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              loading="lazy"
+              className="w-full h-full"
+            />
+          </div>
           <div className="absolute inset-0 flex items-center justify-center text-white text-center">
             {/* Conteúdo do slide */}
           </div>
