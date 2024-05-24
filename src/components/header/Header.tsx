@@ -68,7 +68,7 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="lg:hidden flex flex-col items-center mt-2 pt-4">
             <div className="flex space-x-6 mb-5">
-              <Link href="/favorites" aria-label="Go to the favorites page">
+              <Link href="/" aria-label="Go to the favorites page">
                 <FaInstagram className="text-gray-700 text-2xl cursor-pointer" />
               </Link>
               <FaFacebook className="text-gray-700 text-2xl cursor-pointer" />
