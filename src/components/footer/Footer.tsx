@@ -1,5 +1,6 @@
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -10,24 +11,26 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-2">Links</h4>
             <ul>
               <li>
-                <a href="#" aria-label="Go to the homepage">
-                  Página Inicial
-                </a>
+                <Link href="/" legacyBehavior>
+                  <a aria-label="Go to the homepage">Home</a>
+                </Link>
               </li>
               <li>
-                <a href="#" aria-label="Go to the homepage">
-                  Produtos
-                </a>
+                <Link href="/servicos" legacyBehavior>
+                  <a aria-label="Go to the homepage">Serviços</a>
+                </Link>
               </li>
               <li>
-                <a href="#" aria-label="Go to the homepage">
-                  Sobre Nós
-                </a>
+                <Link href="/obras" legacyBehavior>
+                  <a aria-label="Go to the homepage">Obras</a>
+                </Link>
               </li>
               <li>
-                <a href="# " aria-label="Go to the homepage">
-                  Contato
-                </a>
+                <Link href="/contato" legacyBehavior>
+                  <a href="# " aria-label="Go to the homepage">
+                    Contato
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -37,7 +40,6 @@ const Footer = () => {
             <ul>
               <li>
                 <a
-                  href="#"
                   aria-label="Go to the facebook page"
                   className="flex items-center"
                 >
@@ -46,7 +48,6 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
                   aria-label="Go to the  twitter page"
                   className="flex items-center"
                 >
@@ -55,7 +56,6 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
                   aria-label="Go to the instagram page"
                   className="flex items-center"
                 >
