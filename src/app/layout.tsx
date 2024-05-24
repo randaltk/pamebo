@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import TopBar from "@/components/topbar/Topbar";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import { GlobalProvider } from "@/context/GlobalContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,17 +22,15 @@ export default function RootLayout({
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
       />
-
+      <link rel="shortcut icon" href="favicon.png" />
       <meta
         name="description"
         content="Explore o Planeta das Canetas, a melhor papelaria do Brasil! Descubra uma variedade incrível de canetas, papelaria premium e acessórios de escrita. Encontre produtos de alta qualidade para tornar cada momento de escrita único. Venha descobrir a arte de expressar suas ideias com estilo e elegância no Planeta das Canetas."
       ></meta>
       <body className={inter.className}>
-        <GlobalProvider>
-          <Header />
-          {children}
-          <Footer />
-        </GlobalProvider>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

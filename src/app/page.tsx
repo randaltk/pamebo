@@ -9,15 +9,15 @@ export default function Home() {
       <Banner />
       <InfoBar />
       <div className="bg-white p-6 md:p-8 flex flex-col justify-center items-center mb-0 md:mb-0">
-  <div className="mb-6 text-center text-base md:text-lg">
-    Veja alguns cases de grandes obras realizadas.
-  </div>
-  <Link href="/obras" legacyBehavior>
-    <button className="bg-blue-custom text-white py-2 px-4 rounded hover:bg-blue-700">
-      Cases
-    </button>
-  </Link>
-</div>
+        <div className="mb-6 text-center text-base md:text-lg">
+          Veja alguns cases de grandes obras realizadas.
+        </div>
+        <Link href="/obras" legacyBehavior>
+          <button className="bg-blue-custom text-white py-2 px-4 rounded hover:bg-blue-700">
+            Cases
+          </button>
+        </Link>
+      </div>
 
       <section className="bg-blue-custom py-6 md:py-8 flex flex-col justify-center items-center relative">
         <div className="max-w-lg text-center relative p-4 md:p-6">
