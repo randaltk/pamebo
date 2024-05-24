@@ -26,7 +26,6 @@ const Header = () => {
                 objectFit="cover"
                 objectPosition="bottom"
                 loading="lazy"
-            
               />
             </Link>
           </div>
@@ -46,51 +45,64 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="hidden lg:flex justify-center border-t   mt-3 pt-4">
+        <div className="hidden lg:flex justify-center border-t mt-3 pt-4">
           <Link href="/" aria-label="Go to the homepage">
-            <span className="text-gray-700 hover:text-gray-900">HOME</span>
+            <span className="text-gray-700 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300">
+              HOME
+            </span>
           </Link>
 
           <div className="border-l mx-2 h-4"></div>
           <Link href="/servicos" aria-label="Go to the products page">
-            <span className="text-gray-700 hover:text-gray-900">SERVIÇOS</span>
+            <span className="text-gray-700 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300">
+              SERVIÇOS
+            </span>
           </Link>
           <div className="border-l mx-2 h-4"></div>
           <Link href="/obras" aria-label="Go to the products page">
-            <span className="text-gray-700 hover:text-gray-900">OBRAS</span>
+            <span className="text-gray-700 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300">
+              OBRAS
+            </span>
           </Link>
           <div className="border-l mx-2 h-4"></div>
           <Link href="/contato" aria-label="Go to the products page">
-            <span className="text-gray-700 hover:text-gray-900">CONTATO</span>
+            <span className="text-gray-700 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-3 py-1 rounded-md bg-gray-200 hover:bg-gray-300">
+              CONTATO
+            </span>
           </Link>
         </div>
-
         {isMobileMenuOpen && (
           <div className="lg:hidden flex flex-col items-center mt-2 pt-4">
             <div className="flex space-x-6 mb-5">
               <Link href="/" aria-label="Go to the favorites page">
-                <FaInstagram className="text-gray-700 text-2xl cursor-pointer" />
+                <FaInstagram className="text-gray-700 text-2xl cursor-pointer hover:text-blue-500 transition-colors duration-300" />
               </Link>
-              <FaFacebook className="text-gray-700 text-2xl cursor-pointer" />
-              <FaLinkedin className="text-gray-700 text-2xl cursor-pointer" />
+              <FaFacebook className="text-gray-700 text-2xl cursor-pointer hover:text-blue-500 transition-colors duration-300" />
+              <FaLinkedin className="text-gray-700 text-2xl cursor-pointer hover:text-blue-500 transition-colors duration-300" />
             </div>
 
             <Link href="/" aria-label="Go to the homepage">
-              <span className="text-gray-700 hover:text-gray-900">HOME</span>
+              <span className="text-gray-700 hover:text-blue-500 transition-colors duration-300">
+                HOME
+              </span>
             </Link>
             <div className="border-l mx-2 h-4"></div>
             <Link href="/servicos" aria-label="Go to the products page">
-              <span className="text-gray-700 hover:text-gray-900">
+              <span className="text-gray-700 hover:text-blue-500 transition-colors duration-300">
                 SERVIÇOS
               </span>
             </Link>
             <div className="border-l mx-2 h-4"></div>
             <Link href="/obras" aria-label="Go to the products page">
-              <span className="text-gray-700 hover:text-gray-900">OBRAS</span>
+              <span className="text-gray-700 hover:text-blue-500 transition-colors duration-300">
+                OBRAS
+              </span>
             </Link>
             <div className="border-l mx-2 h-4"></div>
             <Link href="/contato" aria-label="Go to the products page">
-              <span className="text-gray-700 hover:text-gray-900">CONTATO</span>
+              <span className="text-gray-700 hover:text-blue-500 transition-colors duration-300">
+                CONTATO
+              </span>
             </Link>
           </div>
         )}
