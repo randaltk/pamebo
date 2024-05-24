@@ -26,7 +26,7 @@ export default function RootLayout({
       <link rel="shortcut icon" href="favicon.png" />
       <meta
         name="description"
-        content="Explore o Planeta das Canetas, a melhor papelaria do Brasil! Descubra uma variedade incrível de canetas, papelaria premium e acessórios de escrita. Encontre produtos de alta qualidade para tornar cada momento de escrita único. Venha descobrir a arte de expressar suas ideias com estilo e elegância no Planeta das Canetas."
+        content="PAMEBO SOLUÇÕES EM PINTURAS E TEXTURAS ESPECIAIS"
       ></meta>
       <body className={inter.className}>
         <GlobalProvider>
