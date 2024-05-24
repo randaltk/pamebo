@@ -1,0 +1,15 @@
+.ajusteFino {
+  text-align: center;
+}
+.ajusteFino2 {
+    display: none;
+ 
+}
+@media (min-width: 768px) {
+  .ajusteFino {
+    text-align: left;
+  }
+  .ajusteFino2 {
+    display: block;
+}
+}
