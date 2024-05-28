@@ -41,8 +41,6 @@ const Banner = () => {
               src="/banner01.jpeg"
               alt="Banner 1 Mobile"
               layout="fill"
-              objectFit="cover"
-              objectPosition="right"
               loading="lazy"
               className="w-full h-full"
             />
