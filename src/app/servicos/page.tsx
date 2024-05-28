@@ -10,63 +10,63 @@ const Servicos = () => {
     {
       name: "Pintura de paredes e teto em geral",
       image:
-        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "servicos/1.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Hidrojateamento",
       image:
-        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "servicos/13.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Restauração de superfícies",
       image:
-        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "servicos/8.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Lavagem e limpeza de fachada",
       image:
-        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "servicos/11.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Concreto Aparente",
       image:
-        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "servicos/5.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Tijolo Aparente",
       image:
-        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "servicos/7.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Superfície Metálica",
       image:
-        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "servicos/4.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Aplicação de Texturas",
       image:
-        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "servicos/8.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Teste de Percussão",
       image:
-        "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "servicos/14.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },

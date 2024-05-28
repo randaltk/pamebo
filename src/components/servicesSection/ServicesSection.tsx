@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const ServicesSection = () => {
   return (
@@ -8,8 +8,7 @@ const ServicesSection = () => {
           <div
             className="h-48 bg-cover bg-center"
             style={{
-              backgroundImage:
-                "url('https://plus.unsplash.com/premium_photo-1682617326551-4749611516f6?q=80&w=2666&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+              backgroundImage: "url('/servicos/1.png')",
             }}
           ></div>
           <div className="p-4">
@@ -33,8 +32,7 @@ const ServicesSection = () => {
           <div
             className="h-48 bg-cover bg-center"
             style={{
-              backgroundImage:
-                "url('https://plus.unsplash.com/premium_photo-1682617326551-4749611516f6?q=80&w=2666&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+              backgroundImage: "url('servicos/8.png')",
             }}
           ></div>
           <div className="p-4">
@@ -58,8 +56,7 @@ const ServicesSection = () => {
           <div
             className="h-48 bg-cover bg-center"
             style={{
-              backgroundImage:
-                "url('https://plus.unsplash.com/premium_photo-1682617326551-4749611516f6?q=80&w=2666&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+              backgroundImage: "url('servicos/11.png')",
             }}
           ></div>
           <div className="p-4">
