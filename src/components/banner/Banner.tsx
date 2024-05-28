@@ -33,11 +33,25 @@ const Banner = () => {
   return (
     <div className="w-full overflow-hidden relative">
       <Slider {...settings}>
+        {/* Mobile and desktop versions of the first image */}
         <div className="relative overflow-hidden h-[40vh] sm:h-[60vh] md:h-[75vh] lg:h-screen">
-          <div className="relative h-full w-full">
+          {/* Mobile version */}
+          <div className="block md:hidden">
             <Image
               src="/banner01.jpeg"
-              alt="Banner 1"
+              alt="Banner 1 Mobile"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="right"
+              loading="lazy"
+              className="w-full h-full"
+            />
+          </div>
+          {/* Desktop version */}
+          <div className="hidden md:block">
+            <Image
+              src="/banner01.jpeg"
+              alt="Banner 1 Desktop"
               layout="fill"
               objectFit="cover"
               objectPosition="center"
@@ -49,6 +63,8 @@ const Banner = () => {
             {/* Conteúdo do slide */}
           </div>
         </div>
+
+        {/* Slide 2 */}
         <div className="relative overflow-hidden h-[40vh] sm:h-[60vh] md:h-[75vh] lg:h-screen">
           <div className="relative h-full w-full">
             <Image
@@ -65,6 +81,8 @@ const Banner = () => {
             {/* Conteúdo do slide */}
           </div>
         </div>
+
+        {/* Slide 3 */}
         <div className="relative overflow-hidden h-[40vh] sm:h-[60vh] md:h-[75vh] lg:h-screen">
           <div className="relative h-full w-full">
             <Image
