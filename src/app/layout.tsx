@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import { GlobalProvider } from "@/context/GlobalContext";
+import TopBar from "@/components/topbar/Topbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
       ></meta>
       <body className={inter.className}>
         <GlobalProvider>
+          <TopBar/>
           <Header />
           {children}
           <Footer />

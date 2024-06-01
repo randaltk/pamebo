@@ -1,4 +1,5 @@
 import Banner from "@/components/banner/Banner";
+import Fornecedores from "@/components/fornecedores/Fornecedores";
 import InfoBar from "@/components/infobar/Infobar";
 import ServicesSection from "@/components/servicesSection/ServicesSection";
 import Link from "next/link";
@@ -37,6 +38,8 @@ export default function Home() {
       </section>
 
       <ServicesSection />
+
+      <Fornecedores />
     </>
   );
 }

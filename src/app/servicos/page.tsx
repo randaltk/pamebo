@@ -1,5 +1,6 @@
 "use client";
 import Head from "next/head";
+import Image from "next/image";
 import { useState } from "react";
 
 const Servicos = () => {
@@ -9,64 +10,55 @@ const Servicos = () => {
   const services = [
     {
       name: "Pintura de paredes e teto em geral",
-      image:
-        "servicos/1.png",
+      image: "/servicos/1.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Hidrojateamento",
-      image:
-      "servicos/13.png",
+      image: "/servicos/13.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Restauração de superfícies",
-      image:
-        "servicos/8.png",
+      image: "/servicos/8.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Lavagem e limpeza de fachada",
-      image:
-      "servicos/11.png",
+      image: "/servicos/11.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Concreto Aparente",
-      image:
-      "servicos/5.png",
+      image: "/servicos/5.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Tijolo Aparente",
-      image:
-        "servicos/7.png",
+      image: "/servicos/7.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Superfície Metálica",
-      image:
-        "servicos/4.png",
+      image: "/servicos/4.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Aplicação de Texturas",
-      image:
-      "servicos/8.png",
+      image: "/servicos/8.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
     {
       name: "Teste de Percussão",
-      image:
-      "servicos/14.png",
+      image: "/servicos/14.png",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo urna.",
     },
@@ -97,10 +89,16 @@ const Servicos = () => {
             className="relative cursor-pointer transform transition-transform hover:scale-105"
             onClick={() => openModal(service)}
           >
-            <img
+            <Image
               src={service.image}
               alt={service.name}
               className="rounded-lg w-full mb-2"
+              layout="responsive"
+              width={100}
+              height={100}
+              objectFit="contain"
+              objectPosition="center"
+              loading="lazy"
             />
             <p className="text-lg font-semibold text-center">{service.name}</p>
           </div>
