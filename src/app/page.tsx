@@ -1,3 +1,4 @@
+import WhatsAppIcon from "@/components/whatsappicon/WhatsAppIcon";
 import Banner from "@/components/banner/Banner";
 import Fornecedores from "@/components/fornecedores/Fornecedores";
 import InfoBar from "@/components/infobar/Infobar";
@@ -36,10 +37,9 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       <ServicesSection />
-
       <Fornecedores />
+      <WhatsAppIcon />
     </>
   );
 }
