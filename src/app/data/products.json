@@ -12,7 +12,7 @@
         "name": "RESIDENCIAL HELBOR SPAZIO VITA",
         "description": "Rua Doutor Luiz Migliano, 923 – Morumbi – 2022",
         "neighborhood": "Rua Doutor Luiz Migliano, 923 – Morumbi – 2022",
-        "images": ["https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"],
+        "images": ["/obras/helbor01.jpeg","/obras/helbor01.jpeg"],
         "link": ""
     },
     {
@@ -36,7 +36,7 @@
         "name": "RESIDENCIAL PASSIONE DUE",
         "description": "",
         "neighborhood": "",
-        "images": ["/obras/passione01.jpeg"],
+        "images": ["/obras/passione01.jpeg","/obras/passione01.jpeg"],
         "link": ""
     },
     {
