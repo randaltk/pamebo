@@ -1,74 +1,10 @@
 [
     {
         "id": 1,
-        "name": "Place de La Concorde",
-        "description": "Este espaço exclusivo, inspirado na famosa praça de Paris, oferece uma atmosfera de elegância e requinte. Com uma variedade de serviços de manutenção e reparo, os residentes podem desfrutar de um ambiente impecável e bem cuidado em todos os cantos do edifício.",
-        "neighborhood": "2022, Jardins",
+        "name": "CONDOMINIO EDIFICIO PIAZZA SAN PIETRO",
+        "description": "Rua Marina Crespi, 118 - Mooca",
+        "neighborhood": "Rua Marina Crespi, 118 - Mooca",
         "image": "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "link": "https://exemplo.com/place-de-la-concorde"
-    },
-    {
-        "id": 2,
-        "name": "Quintessence",
-        "description": "Localizado em um dos endereços mais cobiçados da cidade, o Quintessence é o epítome do luxo e da sofisticação. Com serviços de limpeza e conservação de alta qualidade, os moradores desfrutam de um ambiente imaculado e bem preservado, refletindo o padrão excepcional deste condomínio de prestígio.",
-        "neighborhood": "2023, Morumbi",
-        "image": "https://images.pexels.com/photos/221027/pexels-photo-221027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://exemplo.com/quintessence"
-    },
-    {
-        "id": 3,
-        "name": "Harmonia Residências",
-        "description": "Situado em meio a jardins exuberantes e paisagens deslumbrantes, Harmonia Residências oferece não apenas um lar, mas uma experiência de vida. Com uma equipe dedicada de serviços de limpeza e conservação, cada espaço é mantido impecável, permitindo que os moradores vivam com conforto e tranquilidade.",
-        "neighborhood": "2022, Moema",
-        "image": "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://exemplo.com/harmonia-residencias"
-    },
-    {
-        "id": 4,
-        "name": "Aurora Towers",
-        "description": "Erguendo-se majestosamente no horizonte da cidade, Aurora Towers oferece uma vida elevada a seus residentes. Com uma equipe especializada em inspeção de segurança predial, cada canto deste imponente edifício é verificado e protegido, garantindo a segurança e o bem-estar de todos os que chamam este lugar de lar.",
-        "neighborhood": "2023, Itaim Bibi",
-        "image": "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://exemplo.com/aurora-towers"
-    },
-    {
-        "id": 5,
-        "name": "Oásis Urbano",
-        "description": "No coração da cidade, encontra-se o Oásis Urbano, um refúgio de tranquilidade e conforto. Com serviços de encanamento e hidráulica de primeira linha, cada unidade residencial é abastecida com água limpa e confiável, garantindo uma vida sem preocupações para todos os moradores.",
-        "neighborhood": "2022, Vila Mariana",
-        "image": "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://exemplo.com/oasis-urbano"
-    },
-    {
-        "id": 6,
-        "name": "Pinnacle Residence",
-        "description": "Com vistas deslumbrantes da cidade, Pinnacle Residence é o pináculo do luxo e da elegância. Com serviços de manutenção de elevadores de classe mundial, os moradores desfrutam de viagens suaves e seguras a cada andar, enquanto admiram a grandiosidade deste prestigioso edifício.",
-        "neighborhood": "2023, Higienópolis",
-        "image": "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://exemplo.com/pinnacle-residence"
-    },
-    {
-        "id": 7,
-        "name": "Serenity Heights",
-        "description": "Aninhado entre colinas verdejantes, Serenity Heights oferece um refúgio sereno para seus privilegiados moradores. Com sistemas de segurança eletrônica de última geração, cada lar é protegido por uma rede de vigilância discreta, proporcionando tranquilidade em todos os momentos.",
-        "neighborhood": "2022, Perdizes",
-        "image": "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://exemplo.com/serenity-heights"
-    },
-    {
-        "id": 8,
-        "name": "Elevate Residences",
-        "description": "Elevate Residences redefine o conceito de vida urbana com sua elegância e estilo incomparáveis. Com serviços de impermeabilização de telhados de alta qualidade, os moradores desfrutam de um ambiente protegido contra os elementos, permitindo que vivam em luxo sem preocupações.",
-        "neighborhood": "2023, Pinheiros",
-        "image": "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://exemplo.com/elevate-residences"
-    },
-    {
-        "id": 9,
-        "name": "Solstice Gardens",
-        "description": "Entre jardins exuberantes e paisagens deslumbrantes, encontra-se Solstice Gardens, um oásis de beleza natural. Com serviços de manutenção de ar-condicionado de primeira linha, os moradores desfrutam de um conforto constante, independentemente da estação, em um ambiente que é verdadeiramente celestial.",
-        "neighborhood": "2022, Campo Belo",
-        "image": "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://exemplo.com/solstice-gardens"
     }
 ]
