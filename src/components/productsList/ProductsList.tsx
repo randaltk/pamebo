@@ -24,7 +24,7 @@ const ProductsList = () => {
             >
               <div className="relative h-64">
                 <img
-                  src={product.image}
+                  src={product.images[0]}
                   alt={product.name}
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -40,7 +40,9 @@ const ProductsList = () => {
                 <div className="flex justify-center items-center mt-4">
                   <Link
                     aria-label="Go to the product details page"
-                    href={`/obras/update?id=${product.id}&name=${product.name}&image=${product.image}&neighborhood=${product.neighborhood}&description=${product.description}&link=${product.link}`}
+                    href={`/obras/update?id=${product.id}&name=${product.name}&images=${encodeURIComponent(
+                      JSON.stringify(product.images)
+                    )}&neighborhood=${product.neighborhood}&description=${product.description}&link=${product.link}`}
                   >
                     <button
                       aria-label="Visualizar"
