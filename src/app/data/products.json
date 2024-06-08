@@ -4,7 +4,47 @@
         "name": "CONDOMINIO EDIFICIO PIAZZA SAN PIETRO",
         "description": "Rua Marina Crespi, 118 - Mooca",
         "neighborhood": "Rua Marina Crespi, 118 - Mooca",
+        "image": "/obras/piazza01.jpeg",
+        "link": ""
+    },
+    {
+        "id": 2,
+        "name": "RESIDENCIAL HELBOR SPAZIO VITA",
+        "description": "Rua Doutor Luiz Migliano, 923 – Morumbi – 2022",
+        "neighborhood": "Rua Doutor Luiz Migliano, 923 – Morumbi – 2022",
         "image": "https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "link": "https://exemplo.com/place-de-la-concorde"
+        "link": ""
+    },
+    {
+        "id": 3,
+        "name": "CONDOMINIO EDIFICIO HAVAY",
+        "description": "CONSTRUTORA PAULO MAURO – Residencial Havaí 295 - Perdizes",
+        "neighborhood": "Residencial Havaí 295 - Perdizes",
+        "image": "/obras/havai01.jpeg",
+        "link": ""
+    },
+    {
+        "id": 4,
+        "name": "Condomínio CLUBE JARDIM VILA MARIA",
+        "description": "R. Itaúna, 1050 - Vila Maria",
+        "neighborhood": "R. Itaúna, 1050 - Vila Maria",
+        "image": "/obras/jdvilamaria01.jpeg",
+        "link": ""
+    },
+    {
+        "id": 5,
+        "name": "RESIDENCIAL PASSIONE DUE",
+        "description": "",
+        "neighborhood": "",
+        "image": "/obras/passione01.jpeg",
+        "link": ""
+    },
+    {
+        "id": 6,
+        "name": "RESTAURAÇÃO FACHADA REDE GLOBO DE TELEVISÃO EM PARCERIA COM RACIONAL ENGENHARIA",
+        "description": "",
+        "neighborhood": "",
+        "image": "/obras/globo01.jpeg",
+        "link": ""
     }
 ]

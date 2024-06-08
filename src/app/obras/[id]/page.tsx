@@ -28,7 +28,7 @@ const BuildingDetail = () => {
      
           {descriptionParam && (
             <div className="mb-6">
-              <p className="text-gray-700">Descrição:</p>
+              <p className="text-gray-700"></p>
               <p>{descriptionParam}</p>
             </div>
           )}
