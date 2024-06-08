@@ -52,6 +52,7 @@ const Fornecedores = () => {
                     alt={`Carousel Image ${idx}`}
                     layout="fill"
                     objectFit="contain"
+                    loading="lazy"
                   />
                 </div>
               </div>

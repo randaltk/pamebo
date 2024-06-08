@@ -16,6 +16,7 @@ const PageBanner: FC<PageBannerProps> = ({ src, alt }) => {
         objectFit="cover"
         objectPosition="center"
         className="w-full h-full"
+        loading="lazy"
       />
     </div>
   );
