@@ -21,10 +21,14 @@ const Contato = () => {
                     Fale Conosco
                   </h1>
                   <p className="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
-                    Complete o formulário para iniciar uma conversa
+                    Entre em contato ou deixe sua solicitação ao lado para ser
+                    atentido(a) horario comercial
+                  </p>
+                  <p className="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
+                    seg-sex das 08-18hs
                   </p>
 
-                  <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+                  {/* <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400">
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -50,7 +54,7 @@ const Contato = () => {
                     <div className="ml-4 text-md tracking-wide font-semibold w-80">
                       R. Pageú, 256 - Vila Mariana, São Paulo - SP, 04140-010
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
                     <svg
@@ -70,7 +74,7 @@ const Contato = () => {
                       />
                     </svg>
                     <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                      +55 5549-7175
+                      +55 (11) 2275-7514
                     </div>
                   </div>
 
@@ -100,17 +104,28 @@ const Contato = () => {
                 <form className="p-6 flex flex-col justify-center">
                   <div className="flex flex-col">
                     <label htmlFor="name" className="hidden">
-                      Nome Completo
+                      Nome
                     </label>
                     <input
                       type="name"
                       name="name"
                       id="name"
-                      placeholder="Nome Completo"
+                      placeholder="Nome "
                       className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                     />
                   </div>
-
+                  <div className="flex flex-col">
+                    <label htmlFor="name" className="hidden">
+                      Sobrenome
+                    </label>
+                    <input
+                      type="lastname"
+                      name="lastname"
+                      id="lastname"
+                      placeholder="Sobrenome"
+                      className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    />
+                  </div>
                   <div className="flex flex-col mt-2">
                     <label htmlFor="email" className="hidden">
                       Email
@@ -136,7 +151,19 @@ const Contato = () => {
                       className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                     />
                   </div>
+                  <div className="flex flex-col mt-2">
+                    <label htmlFor="tel" className="hidden">
+                      Mensagem
+                    </label>
 
+                    <textarea
+                      id="Mensagem"
+                placeholder="Mensagem"
+                      name="message"
+                      required
+                       className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    />
+                  </div>
                   <button
                     type="submit"
                     className="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300"

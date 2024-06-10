@@ -85,7 +85,7 @@ const Footer = () => {
           <AiOutlinePhone className="inline-block mr-2" />
           (11) 2275-7514
         </p>
-        <p className="text-base">R. Pageú, 256 - Vila Mariana, São Paulo - SP, 04140-010</p>
+        {/* <p className="text-base">R. Pageú, 256 - Vila Mariana, São Paulo - SP, 04140-010</p> */}
       </div>
     </footer>
   );
