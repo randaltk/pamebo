@@ -21,7 +21,7 @@ const InfoBar = () => {
         className="bg-cover bg-center relative md:h-96 w-full flex justify-center items-center"
         style={{
           backgroundImage:
-            'url("https://repinte.com.br/wp-content/uploads/2019/11/background-stats.jpg")',
+            'url("/xyz.jpeg")',
         }}
       >
         <div

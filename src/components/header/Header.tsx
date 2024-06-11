@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { FaBars, FaInstagram, FaWhatsapp } from "react-icons/fa";
@@ -13,113 +13,96 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-background-custom p-4 shadow-md">
-      <div className="max-w-screen-lg mx-auto">
-        <div className="container mx-auto flex items-center justify-between">
-          <div className="text-lg font-bold">
-            {" "}
-            {/* Reduzindo o tamanho da fonte */}
-            <Link href="/" aria-label="Go to the homepage">
-              <Image
-                src="/logopamebo.jpeg"
-                alt="Logo"
-                width={200} // Aumentando o tamanho do logo
-                height={150} // Mantendo a altura do logo
-                objectFit="cover"
-                objectPosition="bottom"
-                loading="lazy"
-                className="cursor-pointer"
-              />
-            </Link>
-          </div>
-
-          <div className="lg:hidden">
-            <button aria-label="toggle mobile" onClick={toggleMobileMenu}>
-              <FaBars className="text-gray-500" />
-            </button>
-          </div>
-
-          <div className="hidden lg:flex items-center space-x-6 ml-4">
-            {" "}
-            {/* Reduzindo o espaçamento entre os ícones */}
-            <Link href="/" aria-label="Go to the favorites page">
-              <FaInstagram className="text-gray-700 text-lg cursor-pointer" />{" "}
-              {/* Reduzindo o tamanho do ícone */}
-            </Link>
-            <FaWhatsapp className="text-gray-700 text-lg cursor-pointer" />{" "}
-            {/* Adicionando ícone do WhatsApp */}
-          </div>
-        </div>
-
-        <div className="hidden lg:flex justify-center border-t mt-3 pt-4 space-x-6">
-          {" "}
-          {/* Aumentando o espaçamento entre os links */}
+    <div className="bg-background-custom p-2 shadow-md w-full">
+      <div className="max-w-screen-lg mx-auto flex items-center justify-between px-2">
+        <div className="flex items-center space-x-6">
           <Link href="/" aria-label="Go to the homepage">
-            <span className="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-4 py-2 rounded-md bg-gray-200 hover:bg-gray-300">
-              {" "}
-              {/* Aumentando o padding dos links e a fonte */}
+            <Image
+              src="/logopamebo.jpeg"
+              alt="Logo"
+              width={270}
+              height={200}
+              objectFit="cover"
+              objectPosition="center"
+              loading="lazy"
+              className="cursor-pointer ml-[-20px]" 
+            />
+          </Link>
+        </div>
+        <div className="hidden lg:flex items-center space-x-6">
+          <Link href="/" aria-label="Go to the homepage">
+            <span className="text-lg text-red-500 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-2 py-1 rounded-md">
               HOME
             </span>
           </Link>
-          <Link href="/servicos" aria-label="Go to the products page">
-            <span className="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-4 py-2 rounded-md bg-gray-200 hover:bg-gray-300">
-              {" "}
-              {/* Aumentando o padding dos links e a fonte */}
+          <Link href="/servicos" aria-label="Go to the services page">
+            <span className="text-lg text-red-500 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-2 py-1 rounded-md">
               SERVIÇOS
             </span>
           </Link>
-          <Link href="/obras" aria-label="Go to the products page">
-            <span className="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-4 py-2 rounded-md bg-gray-200 hover:bg-gray-300">
-              {" "}
-              {/* Aumentando o padding dos links e a fonte */}
+          <Link href="/obras" aria-label="Go to the projects page">
+            <span className="text-lg text-red-500 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-2 py-1 rounded-md">
               OBRAS
             </span>
           </Link>
-          <Link href="/contato" aria-label="Go to the products page">
-            <span className="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-4 py-2 rounded-md bg-gray-200 hover:bg-gray-300">
-              {" "}
-              {/* Aumentando o padding dos links e a fonte */}
+          <Link href="/contato" aria-label="Go to the contact page">
+            <span className="text-lg text-red-500 hover:text-blue-500 transition-colors duration-300 cursor-pointer px-2 py-1 rounded-md">
               CONTATO
             </span>
           </Link>
         </div>
-        {isMobileMenuOpen && (
-          <div className="lg:hidden flex flex-col items-center mt-2 pt-4 space-y-4">
-            {" "}
-            {/* Reduzindo o espaçamento entre os links */}
-            <div className="flex space-x-6 mb-3">
-              {" "}
-              {/* Reduzindo o espaçamento entre os ícones */}
-              <Link href="/" aria-label="Go to the favorites page">
-                <FaInstagram className="text-gray-700 text-lg cursor-pointer hover:text-blue-500 transition-colors duration-300" />{" "}
-                {/* Reduzindo o tamanho do ícone */}
-              </Link>
-              <FaWhatsapp className="text-gray-700 text-lg cursor-pointer hover:text-blue-500 transition-colors duration-300" />{" "}
-              {/* Adicionando ícone do WhatsApp */}
-            </div>
-            <Link href="/" aria-label="Go to the homepage">
-              <span className="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300">
-                HOME
-              </span>
-            </Link>
-            <Link href="/servicos" aria-label="Go to the products page">
-              <span className="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300">
-                SERVIÇOS
-              </span>
-            </Link>
-            <Link href="/obras" aria-label="Go to the products page">
-              <span className="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300">
-                OBRAS
-              </span>
-            </Link>
-            <Link href="/contato" aria-label="Go to the products page">
-              <span className="text-lg text-gray-700 hover:text-blue-500 transition-colors duration-300">
-                CONTATO
-              </span>
+        <div className="flex hidden lg:flex items-center space-x-4">
+          <Link
+            href="https://wa.me/5511997034509"
+            target="_blank"
+            aria-label="Contact on WhatsApp"
+            className="flex items-center space-x-1"
+          >
+            <FaWhatsapp className="text-gray-700 text-lg cursor-pointer" />
+            <span className="text-gray-700 text-xl">997034509</span>
+          </Link>
+        </div>
+
+        <div className="lg:hidden">
+          <button aria-label="toggle mobile" onClick={toggleMobileMenu}>
+            <FaBars className="text-gray-500" />
+          </button>
+        </div>
+      </div>
+
+      {isMobileMenuOpen && (
+        <div className="lg:hidden flex flex-col items-center mt-2 pt-4 space-y-4">
+          <div className="flex space-x-6 mb-3">
+            <Link
+              href="https://wa.me/5511997034509"
+              target="_blank"
+              aria-label="Contact on WhatsApp"
+            >
+              <FaWhatsapp className="text-gray-700 text-lg cursor-pointer" />
             </Link>
           </div>
-        )}
-      </div>
+          <Link href="/" aria-label="Go to the homepage">
+            <span className="text-lg text-red-500 hover:text-blue-500 transition-colors duration-300 cursor-pointer">
+              HOME
+            </span>
+          </Link>
+          <Link href="/servicos" aria-label="Go to the services page">
+            <span className="text-lg text-red-500 hover:text-blue-500 transition-colors duration-300 cursor-pointer">
+              SERVIÇOS
+            </span>
+          </Link>
+          <Link href="/obras" aria-label="Go to the projects page">
+            <span className="text-lg text-red-500 hover:text-blue-500 transition-colors duration-300 cursor-pointer">
+              OBRAS
+            </span>
+          </Link>
+          <Link href="/contato" aria-label="Go to the contact page">
+            <span className="text-lg text-red-500 hover:text-blue-500 transition-colors duration-300 cursor-pointer">
+              CONTATO
+            </span>
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

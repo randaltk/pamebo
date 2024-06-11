@@ -1,71 +1,58 @@
 "use client";
-import PageBanner from "@/components/pagebanner/PageBanner";
+import { FC, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { useState } from "react";
+import PageBanner from "@/components/pagebanner/PageBanner";
 
-const Servicos = () => {
+interface Service {
+  name: string;
+  image: string;
+  description: string;
+}
+
+const Servicos: FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [selectedService, setSelectedService]: any = useState(null);
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
 
-  const services = [
+  const services: Service[] = [
     {
-      name: "Pintura de paredes e teto em geral",
+      name: "Pintura interna predial residencial",
       image: "/servicos/1.png",
-      description:
-        "",
+      description: "",
     },
     {
       name: "Hidrojateamento",
       image: "/servicos/13.png",
-      description:
-        "",
+      description: "",
     },
     {
-      name: "Restauração de superfícies",
+      name: "Restauração e pintura de fachadas",
       image: "/servicos/8.png",
-      description:
-        "",
+      description: "",
     },
     {
       name: "Lavagem e limpeza de fachada",
       image: "/servicos/11.png",
-      description:
-        "",
+      description: "",
     },
     {
-      name: "Concreto Aparente",
+      name: "Acabamentos especiais",
       image: "/servicos/5.png",
-      description:
-        "",
+      description: "",
     },
     {
-      name: "Tijolo Aparente",
-      image: "/servicos/7.png",
-      description:
-        "",
-    },
-    {
-      name: "Superfície Metálica",
-      image: "/servicos/4.png",
-      description:
-        "",
-    },
-    {
-      name: "Aplicação de Texturas",
+      name: "Tratamento e restauração de pastilhas",
       image: "/servicos/8.png",
-      description:
-        "",
+      description: "",
     },
     {
       name: "Teste de Percussão",
       image: "/servicos/14.png",
-      description:
-        "",
+      description: "",
     },
   ];
 
-  const openModal = (service: any) => {
+  const openModal = (service: Service) => {
     setSelectedService(service);
     setModalOpen(true);
   };
@@ -77,14 +64,18 @@ const Servicos = () => {
 
   return (
     <>
-      <PageBanner src="/pagebanners/1.png" alt="Contato Banner" />
-      <div className="container mx-auto mt-10 mb-10">
-        <Head>
-          <title>Serviços</title>
-        </Head>
-        <h2 className="text-4xl font-bold mb-4 text-center">Serviços</h2>
-        <hr className="border-t-2 border-red-custom mx-auto w-1/6 mb-12" />
+      <Head>
+        <title>Serviços</title>
+      </Head>
+      <div className="relative">
+        <h2 className="text-4xl font-bold mb-4 text-center z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-lg p-4 shadow-md">
+          Serviços
+        </h2>
 
+        <PageBanner src="/pagebanners/1.png" alt="Contato Banner" />
+      </div>
+
+      <div className="container mx-auto mt-10 mb-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <div
@@ -109,14 +100,13 @@ const Servicos = () => {
             </div>
           ))}
         </div>
-
         {modalOpen && selectedService && (
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
             <div className="bg-white p-6 max-w-md rounded-lg">
               <h3 className="text-2xl font-bold mb-4">
                 {selectedService.name}
               </h3>
-              <img
+              <Image
                 src={selectedService.image}
                 alt={selectedService.name}
                 className="rounded-lg mb-4"

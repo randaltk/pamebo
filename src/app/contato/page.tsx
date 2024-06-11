@@ -1,16 +1,19 @@
-import PageBanner from "@/components/pagebanner/PageBanner";
-import Head from "next/head";
+import PageBanner from '@/components/pagebanner/PageBanner';
+import Head from 'next/head';
 
 const Contato = () => {
   return (
     <>
-      <PageBanner src="/pagebanners/3.png" alt="Contato Banner" />
+      <div className="relative">
+      <h2 className="text-4xl font-bold mb-4 text-center z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-lg p-4 shadow-md">Contato</h2>
+
+        <PageBanner src="/pagebanners/3.png" alt="Contato Banner" />
+      </div>
       <div className="container mx-auto mt-10">
         <Head>
           <title>Contato</title>
         </Head>
-        <h2 className="text-4xl font-bold mb-4 text-center">Contato</h2>
-        <hr className="border-t-2 border-red-custom mx-auto w-1/6 mb-12" />
+
 
         <div className="p-6 flex-grow flex flex-col justify-between">
           <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -24,37 +27,27 @@ const Contato = () => {
                     Entre em contato ou deixe sua solicitação ao lado para ser
                     atentido(a) horario comercial
                   </p>
-                  <p className="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
-                    seg-sex das 08-18hs
-                  </p>
 
-                  {/* <div className="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+                  <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
                     <svg
+                      xmlns="http://www.w3.org/2000/svg"
                       fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
                       viewBox="0 0 24 24"
+                      stroke="currentColor"
                       className="w-8 h-8 text-gray-500"
                     >
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        strokeWidth={2}
+                        d="M12 6V12L15 15"
                       />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="1.5"
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
+                      <circle cx={12} cy={12} r={10} />
                     </svg>
-                    <div className="ml-4 text-md tracking-wide font-semibold w-80">
-                      R. Pageú, 256 - Vila Mariana, São Paulo - SP, 04140-010
+                    <div className="ml-4 text-md tracking-wide font-semibold w-40">
+                      Horário segunda a sexta-feira 08:00 às 18:00 horas
                     </div>
-                  </div> */}
+                  </div>
 
                   <div className="flex items-center mt-4 text-gray-600 dark:text-gray-400">
                     <svg
@@ -158,10 +151,10 @@ const Contato = () => {
 
                     <textarea
                       id="Mensagem"
-                placeholder="Mensagem"
+                      placeholder="Mensagem"
                       name="message"
                       required
-                       className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                      className="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
                     />
                   </div>
                   <button

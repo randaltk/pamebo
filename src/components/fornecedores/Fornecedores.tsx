@@ -5,14 +5,12 @@ import Image from "next/image";
 
 const images = [
   "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo20.png",
-  "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo21.png",
-  "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo22.png",
   "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo01.png",
-  "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo6.png",
-  "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo16.png",
   "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo03.png",
-  "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo02.png",
   "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo19.png",
+  "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo13.png",
+  "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo08.png",
+  "https://www.rkbengenharia.com.br/wp-content/uploads/2020/04/logo07.png",
 ];
 
 // Duplicar a lista de imagens para criar um efeito de loop contínuo

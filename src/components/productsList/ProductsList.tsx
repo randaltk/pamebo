@@ -1,21 +1,22 @@
-"use client";
-
-import Link from "next/link";
-import products from "../../app/data/products.json";
-import Head from "next/head";
-import PageBanner from "../pagebanner/PageBanner";
+import Link from 'next/link';
+import products from '../../app/data/products.json';
+import Head from 'next/head';
+import PageBanner from '../pagebanner/PageBanner';
 
 const ProductsList = () => {
   return (
     <>
-      <PageBanner src="/pagebanners/2.png" alt="Contato Banner" />
+      <div className="relative">
+      <h2 className="text-4xl font-bold mb-4 text-center z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white text-black rounded-lg p-4 shadow-md">Obras</h2>
+
+        <PageBanner src="/pagebanners/2.png" alt="Contato Banner" />
+      </div>
 
       <div className="container mx-auto mt-10">
         <Head>
           <title>Obras</title>
         </Head>
-        <h2 className="text-4xl font-bold mb-4 text-center">Obras</h2>
-        <hr className="border-t-2 border-red-custom mx-auto w-1/6 mb-12" />
+       
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {products.map((product) => (
             <li
