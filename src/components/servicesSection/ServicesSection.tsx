@@ -16,7 +16,7 @@ const ServicesSection = () => {
               Pintura de paredes e teto em geral
             </h1>
             <p className="mt-2 text-gray-600 text-lg">
-              Benefícios e impactos para qualquer prédio
+            Conheça mais nossos serviços 
             </p>
             <div className="flex items-center justify-between mt-4">
               <Link href="/servicos" legacyBehavior>
@@ -40,7 +40,7 @@ const ServicesSection = () => {
               Restauração de superfícies
             </h1>
             <p className="mt-2 text-gray-600 text-lg">
-              Benefícios e impactos para qualquer prédio
+            Conheça mais nossos serviços 
             </p>
             <div className="flex items-center justify-between mt-4">
               <Link href="/servicos" legacyBehavior>
@@ -64,7 +64,7 @@ const ServicesSection = () => {
               Lavagem e limpeza de fachada
             </h1>
             <p className="mt-2 text-gray-600 text-lg">
-              Benefícios e impactos para qualquer prédio
+            Conheça mais nossos serviços 
             </p>
             <div className="flex items-center justify-between mt-4">
               <Link href="/servicos" legacyBehavior>
