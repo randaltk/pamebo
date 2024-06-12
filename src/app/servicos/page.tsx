@@ -108,8 +108,8 @@ const Servicos: FC = () => {
               </h3>
               <Image
                 src={selectedService.image}
-        width={500}
-        height={500}
+                width={500}
+                height={500}
                 alt={selectedService.name}
                 className="rounded-lg mb-4"
               />
