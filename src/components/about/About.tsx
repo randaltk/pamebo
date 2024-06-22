@@ -38,7 +38,7 @@ const About = () => {
             Conquistar a todo momento a confiança do mercado oferecendo serviço
             de excelência é uma tarefa árdua que buscamos diariamente com
             engajamento, comprometimento e postura ética profissional de todos
-            os colaboradores que compõe a Repinte.
+            os colaboradores que compõe a Pamebo.
           </p>
           <p className="text-base md:text-lg text-white italic mt-4">
             Eng. Paulo Ramalho
