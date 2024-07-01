@@ -1,11 +1,13 @@
-"use client"
+"use client";
 
 import PageBanner from "@/components/pagebanner/PageBanner";
 import Head from "next/head";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contato = () => {
-  const [state, handleSubmit] = useForm(`${process.env.FORM}`);
+  const key: any = process.env.FORM;
+
+  const [state, handleSubmit] = useForm(key);
 
   if (state.succeeded) {
     return (
