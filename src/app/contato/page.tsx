@@ -5,9 +5,7 @@ import Head from "next/head";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contato = () => {
-  const key: any = process.env.FORM;
-
-  const [state, handleSubmit] = useForm(key);
+  const [state, handleSubmit] = useForm("mdknoeoz");
 
   if (state.succeeded) {
     return (
